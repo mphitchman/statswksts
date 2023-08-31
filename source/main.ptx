@@ -3,42 +3,61 @@
 <pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <docinfo>
+    <!--<brandlogo url="https://mphitchman.com/stats" source="images/im-coverimage-icon.svg"/>-->
+
+    <images>
+      <archive>eps pdf png svg tex</archive>
+    </images>
     <macros>
       \newcommand{\R}{\mathbb R}
     </macros>
     <latex-image-preamble>
       \usepackage{tikz}
     </latex-image-preamble>
+    <initialism>STACT</initialism>
+
+    <document-id>mph-M140-activities</document-id>
+
+    <html>
+      <favicon/>
+      <baseurl href="https://mphitchman.com/stats" />
+    </html>
   </docinfo>
 
-  <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+  <book xml:id="m140-activities">
+    <title>MATH 140 Worksheets</title>
 
     <frontmatter xml:id="frontmatter">
       <titlepage>
         <author>
-          <personname>mph</personname>
-          <department>Awesome</department>
-          <institution>Greendale</institution>
+          <personname>Michael P. Hitchman</personname>
+          <department>Department of Mathemtatics and Computer Science</department>
+          <institution>Linfield University</institution>
+          <email>mhitchman@linfield.edu</email>
         </author>
         <date>
           <today />
         </date>
       </titlepage>
 
+      <abstract>
+        <p>
+          This set of activities complements material in Hitchman's MATH 140 Intro to Statistics classes. This material is available at <url href="https://mphitchman.com/stats">mphitchman.com/stats</url>.
+        </p>
+      </abstract>
+
       <colophon>
 
         <website>
           <name>
-            <c>example.org</c>
+            <c>mphitchman.com/stats</c>
           </name>
-          <address>https://example.org</address>
+          <address>https://mphitchman.com/stats</address>
         </website>
 
         <copyright>
-          <year>2020<ndash />2023</year>
-          <holder>You</holder>
+          <year>2021<ndash />2023</year>
+          <holder>Michael P. Hitchman</holder>
           <shortlicense> 
             This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
           </shortlicense>
@@ -46,12 +65,76 @@
       </colophon>
     </frontmatter>
 
-    <chapter xml:id="chapter-title">
-      <title>Chapter title</title>
+    <chapter xml:id="descriptive-stats">
+      <title>Descriptive Statistics</title>
 
-      <section xml:id="section-title">
-        <title>Section title</title>
-        <p>Hello</p>
+      <section xml:id="governors">
+        <title>Governors</title>
+        <p>
+          <assemblage><title>Scene</title><p>
+            We use RStudio to investigate a data set containing information about the current governors of the 50 US States.</p>
+          </assemblage>
+        </p>
+        <p>Begin this worksheet by completing the following steps:
+          <ol>
+            <li>Open RStudio.</li>
+            <li>At the console prompt load the tidyverse by entering <c>library(tidyverse)</c></li>
+            <li>Load the governors data into your session by entering this line in the console prompt 
+              <cd>gov = read.csv("https://mphitchman.com/stats/data/gov23.csv")</cd></li>
+          </ol>
+        </p>
+        <p>By running the two lines of code you should now have the data frame <c>gov</c> loaded into your session, and you are also ready to utilize commands in the <em>tidyverse</em> package.</p>
+        <worksheet>
+        <exercise>
+          <statement>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    How many observations does this data set have?
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    How many variables?  Classify each variable as numerical or categorical.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Use the <c>table()</c> command to determine how many current governors are Republican and how many are Democratic. 
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <hint>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    <c>nrow(gov)</c> returns the number of rows (observations) in the data frame <c>gov</c>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <c>ncol(gov)</c> returns the number of columns (variables)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <c>table(gov$party)</c> summarizes the <c>party</c> variable of the data frame <c>gov</c>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    What proportion of governors, currently, are Republican?  Express your answer as a fraction or in decimal form.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </hint>
+        </exercise>
+      </worksheet>
       </section>
 
     </chapter>
