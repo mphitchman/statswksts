@@ -3,7 +3,7 @@
 <pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <docinfo>
-    <!--<brandlogo url="https://mphitchman.com/stats" source="images/im-coverimage-icon.svg"/>-->
+    <brandlogo url="https://mphitchman.com/stats" source="images/im-coverimage-icon.svg"/>
 
     <images>
       <archive>eps pdf png svg tex</archive>
@@ -133,6 +133,14 @@
               </ol>
             </p>
           </hint>
+        </exercise>
+        <exercise>
+          <webwork>
+            <statement>
+              <p> How many observations does the data frame <c>gov</c> have?<var name="'50'" width="5" /></p>
+              <p> How many variables does the data frame <c>gov</c> have?<var name="'6" width="5" /></p>
+            </statement>
+          </webwork>
         </exercise>
       </worksheet>
       </section>
