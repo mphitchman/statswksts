@@ -134,15 +134,17 @@
             </p>
           </hint>
         </exercise>
-        <exercise>
-          <webwork>
-            <statement>
-              <p> How many observations does the data frame <c>gov</c> have?<var name="'50'" width="5" /></p>
-              <p> How many variables does the data frame <c>gov</c> have?<var name="'6" width="5" /></p>
-            </statement>
-          </webwork>
-        </exercise>
       </worksheet>
+
+      <exercise>
+        <webwork>
+          <statement>
+            <p> How many observations does the data frame <c>gov</c> have?<var name="'50'" width="5" /></p>
+            <p> How many variables does the data frame <c>gov</c> have?<var name="'6" width="5" /></p>
+          </statement>
+        </webwork>
+      </exercise>
+      
       </section>
 
     </chapter>
