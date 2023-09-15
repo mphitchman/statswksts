@@ -3,7 +3,6 @@
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-1" ww-id="webwork-1">
     <static seed="1">
       <statement><p>How many observations does the data frame <c>gov</c> have?<fillin name="AnSwEr0001" characters="5"/></p>
-<p>How many variables does the data frame <c>gov</c> have?<fillin name="AnSwEr0002" characters="1"/><fillin name="AnSwEr0002" characters="1"/></p>
 </statement>
       <answer>
         <p>
@@ -11,11 +10,11 @@
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoJ051bWVyaWMnKTsKCkJFR0lOX1BHTUwKSG93IG1hbnkgb2JzZXJ2YXRpb25zIGRvZXMgdGhlIGRhdGEgZnJhbWUgW3xnb3Z8XSogaGF2ZT9bX117JzUwJ317NX0KCkhvdyBtYW55IHZhcmlhYmxlcyBkb2VzIHRoZSBkYXRhIGZyYW1lIFt8Z292fF0qIGhhdmU/W19deyc2fXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoJ051bWVyaWMnKTsKCkJFR0lOX1BHTUwKSG93IG1hbnkgb2JzZXJ2YXRpb25zIGRvZXMgdGhlIGRhdGEgZnJhbWUgW3xnb3Z8XSogaGF2ZT9bX117JzUwJ317NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2023-09-13T20:52:50Z       
+###       on 2023-09-15T23:43:27Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -65,8 +64,6 @@ Context('Numeric');
 
 BEGIN_PGML
 How many observations does the data frame [|gov|]* have?[_]{'50'}{5}
-
-How many variables does the data frame [|gov|]* have?[_]{'6}{5}
 
 END_PGML
 
